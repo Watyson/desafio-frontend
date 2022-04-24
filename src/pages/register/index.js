@@ -32,9 +32,9 @@ const Register = () => {
     const onSubmit = useCallback(async () => {
         try{
             await axios.post("/toschedule", form)
+            alert("Usuario cadastrado com sucesso.")
         }
         catch(error){
-            console.log(form)
             alert(error.response.data.message)
         }
     }, [form])
@@ -59,7 +59,6 @@ const Register = () => {
                         />
                         <p/>
                     </div>
-                    
                     <div className="input-container">
                         <label>Data de nascimento*</label><br/>
                         <DatePicker
@@ -76,7 +75,6 @@ const Register = () => {
                         />
                         <p/>
                     </div>
-                    
                     <div className="input-container">
                         <label>Data para agendamento*</label><br/>
                         <DatePicker
