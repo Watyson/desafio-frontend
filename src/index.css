@@ -1,13 +1,69 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Menu*/
+ul {
+    background-color: #333;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    float: left;
+}
+li a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+}
+li:hover    {background-color: #111;}
+li:active   {background-color: #424242;}
+
+/*Cabeçalho do formulário*/
+h1{
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    color: #066a75;
+    padding-bottom: 30px;
+    padding: 10px 0;
+}
+label{
+    width: 350px;
+    color: #405c60;
+    position: relative;
+}
+button {
+    font-size: medium;
+    position: relative;
+    width: 400px;
+    margin: 1px auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Content que contem o formulário*/
+.content{
+    position: relative;
+    width: 400px;
+    margin: 1px auto;
+}
+.form-field {
+    font-style: italic;
+    font-size: medium;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    width: 380px;
 }
