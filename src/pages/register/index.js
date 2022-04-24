@@ -35,6 +35,12 @@ const Register = () => {
             alert("Usuario cadastrado com sucesso.")
         }
         catch(error){
+            if(!error.response){
+                alert("Ocorreu algum erro ao se conectar com o servidor.\n"+
+                      "Provavelmente o erro do (CORS)... Não consgui arrumar ;-;\n"+
+                      "Nos commit do frontend eu disse o que fiz para testar o meu programa"+
+                      "\n\nErro: Cross-Origin Resource Sharing error")
+            }
             alert(error.response.data.message)
         }
     }, [form])
