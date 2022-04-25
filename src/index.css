@@ -67,3 +67,12 @@ button {
     padding: 8px;
     width: 380px;
 }
+.form-control{
+    font-style: italic;
+    font-size: medium;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    width: 380px;
+}
