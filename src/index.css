@@ -76,3 +76,36 @@ button {
     padding: 8px;
     width: 380px;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    text-align: center;
+    height: 30px;
+    background-color: #747474;
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(66, 162, 177, 0.5) !important;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.statusChange {
+    font-size: medium;
+    position: relative;
+    width: 150px;
+    margin: 1px auto;
+    margin-left: auto;
+    margin-right: auto;
+}
